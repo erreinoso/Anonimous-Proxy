@@ -1,6 +1,21 @@
-// fonts
-$font-main: "Roboto", sans-serif;
+//COLORS TEXT//
+$color-primary: #000000; //negro
+$color-light: #ffffff; //blanco
+$color-paragraph: #4a4a4a; //gris oscuro
+$color-tertiary: #8ccbea; //Celeste small
 
-// colors
-$color-white: #f3f4f5;
-$color-secondary: #999;
+//COLORS BUTTON//
+$color-button: #f26002; //naranja boton
+$color-secondary: #0271bc; //cian
+
+//COLORS BACKGROUND
+$color-secondary: #eff9ff; //iced-blue fondo section
+$color-footer: #304268; //azul footer
+
+//FONTS
+$font-primary: "Roboto", sans-serif;
+$font-secondary: "Roboto Slab", serif;
+$font-size: 18px; // tienes que especificar que esta es la del html
+
+// BREAKPOINTS
+$tablet: 768px;

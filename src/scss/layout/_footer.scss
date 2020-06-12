@@ -3,10 +3,15 @@
   color: $color-light;
 
   .wrapper {
-    padding: 0.8333rem;
-    padding-top: 0px;
+    padding-left: 0.8333rem;
+    padding-right: 0.8333rem;
     width: 100%;
-
+    @include tablet {
+      padding-right: 2.222rem;
+      padding-left: 2.222rem;
+      display: flex;
+      justify-content: space-around;
+    }
     .ico-arrow {
       background-color: $color-light;
       width: 2.5rem;
@@ -48,6 +53,16 @@
       justify-content: center;
       text-align: center;
       padding-top: 1.556rem;
+      @include tablet {
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: start;
+        padding-top: 2.5rem;
+        order: 2;
+        width: 30%;
+        margin: 0;
+        padding-left: 0px;
+      }
       .footer-menu-list1,
       .footer-menu-list2 {
         size: 0.8889rem;
@@ -58,12 +73,23 @@
     }
     .footer-menu1 {
       padding-top: 3.33rem;
+      @include tablet {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+      }
     }
     .footer-small {
       size: 0.777rem;
       text-align: center;
       flex-wrap: wrap;
       padding-top: 1.556rem;
+      @include tablet {
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: start;
+        padding-top: 2.5rem;
+        order: 1;
+      }
       .copy {
         display: block;
         width: 100%;

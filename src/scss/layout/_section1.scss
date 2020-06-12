@@ -1,5 +1,18 @@
 .page__section1 .wrapper {
-  padding: 0.8333rem;
+  padding-left: 0.8333rem;
+  padding-right: 0.8333rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  margin-top: 1.667rem;
+  margin-bottom: 2.5rem;
+  @include tablet {
+    padding-left: 2.167rem;
+    padding-right: 2.167rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    margin-top: 1.667rem;
+    margin-bottom: 3.333rem;
+  }
   span {
     margin-top: 1.667rem;
     line-height: 1.667rem;
@@ -11,12 +24,19 @@
     font-family: $font-secondary;
     font-size: 1.333rem;
     color: $color-primary;
+    @include tablet {
+      font-size: 1.444rem;
+      line-height: 2.5rem;
+    }
   }
   p {
     font-size: 1rem;
     line-height: 1.111rem;
     color: $color-paragraph;
     margin-top: 15px;
+    @include tablet {
+      font-size: 1.111rem;
+    }
   }
   .button-go {
     width: 4.222rem;
@@ -34,6 +54,8 @@
     &:hover {
       font-weight: bold;
       border: 0.222rem solid $color-button;
+      margin-top: 1.66rem;
+      margin-bottom: 3.33rem;
     }
     a {
       padding: 0.4333rem;

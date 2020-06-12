@@ -1,9 +1,14 @@
 .page__section2 .wrapper {
   display: flex;
-  padding: 0.8333rem;
+  padding-left: 0.8333rem;
+  padding-right: 0.8333rem;
   background-color: $color-secondary;
   flex-direction: column;
   justify-content: center;
+  @include tablet {
+    padding-right: 2.222rem;
+    padding-left: 2.222rem;
+  }
 
   .h2 {
     text-transform: capitalize;
@@ -11,23 +16,50 @@
     font-size: 1.333rem;
     text-align: center;
     margin-top: 1.667rem;
+    @include tablet {
+      font-size: 1.444rem;
+    }
   }
 
   .reasons {
     padding-left: 3.056rem;
     padding-right: 3.056rem;
-    article {
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1.446rem;
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .art1,
+    .art2,
+    .art3 {
       h3 {
         margin-top: 2.5rem;
         font-family: $font-secondary;
         line-height: 1.667rem;
         text-align: center;
+        font-size: 1rem;
+        @include tablet {
+          font-size: 1.333rem;
+        }
       }
       p {
         line-height: 1.667rem;
         text-align: center;
+        font-size: 1rem;
+        @include tablet {
+          font-size: 1.111rem;
+          padding: 4px;
+          margin-top: 10px;
+        }
       }
     }
+    // .art1 {
+    //   @include tablet {
+    //     grid-column: 1/2;
+    //   }
+    // }
   }
   .button-reasons {
     display: flex;
@@ -47,6 +79,11 @@
       color: $color-button;
       background-color: $color-light;
       border: 0.2 rem dotted $color-button;
+    }
+    @include tablet {
+      font-size: 1.111rem;
+      width: 11.67rem;
+      height: 2.5rem;
     }
   }
 }

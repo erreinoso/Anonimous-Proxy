@@ -4,6 +4,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  @include tablet {
+    height: 768px;
+  }
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -11,14 +14,27 @@
     align-content: center;
     height: 100vh;
     padding: 0.8333rem;
+    @include tablet {
+      padding: 2.167rem;
+      padding-bottom: 0;
+      height: 768px;
+      // justify-content: flex-end;
+    }
+
     h1 {
       font-size: 2.333rem;
       color: $color-light;
       text-transform: capitalize;
       font-family: $font-secondary;
-      // line-height: 3.056rem;
       text-align: center;
       margin-bottom: 0px;
+      @include tablet {
+        font-size: 4.444rem;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        line-height: 6rem;
+        padding-top: 280px;
+      }
     }
     .span {
       font-size: 0.8889rem;
@@ -26,6 +42,9 @@
       font-family: $font-primary;
       text-align: center;
       margin-top: 0.5556rem;
+      @include tablet {
+        font-size: 1.333rem;
+      }
     }
     a {
       bottom: 0px;
@@ -37,6 +56,10 @@
       display: flex;
       justify-content: center;
       transform: translate(0, 280%);
+      @include tablet {
+        transform: translate(0, 0%);
+        margin: auto;
+      }
     }
   }
 }

@@ -1,2 +1,82 @@
 .page__footer {
+  background-color: $color-footer;
+  color: $color-light;
+
+  .wrapper {
+    padding: 0.8333rem;
+    padding-top: 0px;
+    width: 100%;
+
+    .ico-arrow {
+      background-color: $color-light;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 1.222rem;
+      box-shadow: 0 2px 4px 0 var(--black-50);
+      color: $color-button;
+      size: 1.111rem;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      align-items: center;
+      text-align: center;
+
+      a {
+        padding: 0.3rem;
+        img {
+          size: 1.333rem;
+          transform: translate(0, 85%);
+          animation-name: intro;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          @keyframes intro {
+            from {
+              transform: translate(0, 85%);
+            }
+            to {
+              transform: translate(0, 40%);
+            }
+          }
+        }
+      }
+    }
+    .footer-menu1,
+    .footer-menu2 {
+      line-height: 1.667rem;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding-top: 1.556rem;
+      .footer-menu-list1,
+      .footer-menu-list2 {
+        size: 0.8889rem;
+        a {
+          padding: 0.5rem;
+        }
+      }
+    }
+    .footer-menu1 {
+      padding-top: 3.33rem;
+    }
+    .footer-small {
+      size: 0.777rem;
+      text-align: center;
+      flex-wrap: wrap;
+      padding-top: 1.556rem;
+      .copy {
+        display: block;
+        width: 100%;
+      }
+      .love {
+        display: block;
+        width: 100%;
+        margin-bottom: 2.5rem;
+        margin-top: 1rem;
+        .fas {
+          color: $color-button;
+        }
+      }
+    }
+  }
 }

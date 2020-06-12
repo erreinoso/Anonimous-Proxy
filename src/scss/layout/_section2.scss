@@ -42,5 +42,11 @@
     margin-top: 3.333rem;
     margin-bottom: 3.333rem;
     align-self: center;
+    transition: color ease 0.8s, background-color ease 0.8s, border ease 0.8s;
+    &:hover {
+      color: $color-button;
+      background-color: $color-light;
+      border: 0.2 rem dotted $color-button;
+    }
   }
 }

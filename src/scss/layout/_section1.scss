@@ -30,7 +30,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    transition: font-weight ease 0.8s;
+    &:hover {
+      font-weight: bold;
+      border: 0.222rem solid $color-button;
+    }
     a {
       padding: 0.4333rem;
     }

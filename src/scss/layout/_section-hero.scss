@@ -1,0 +1,42 @@
+.page__hero {
+  height: 100vh;
+  background-image: url("../../assets/images/cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    padding: 0.8333rem;
+    h1 {
+      font-size: 2.333rem;
+      color: $color-light;
+      text-transform: capitalize;
+      font-family: $font-secondary;
+      // line-height: 3.056rem;
+      text-align: center;
+      margin-bottom: 0px;
+    }
+    .span {
+      font-size: 0.8889rem;
+      color: $color-light;
+      font-family: $font-primary;
+      text-align: center;
+      margin-top: 0.5556rem;
+    }
+    a {
+      bottom: 0px;
+      align-self: center;
+      background-color: $color-light;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      transform: translate(0, 280%);
+    }
+  }
+}

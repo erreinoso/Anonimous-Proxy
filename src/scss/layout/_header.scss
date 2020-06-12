@@ -1,2 +1,13 @@
-.page__header {
+.page__header .header-menu {
+  background-color: $color-menu;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  a {
+    height: 16px;
+    transform: translate(6px, 6px);
+    padding: 8px;
+  }
 }

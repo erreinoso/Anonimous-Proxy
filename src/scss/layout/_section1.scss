@@ -1,0 +1,38 @@
+.page__section1 .wrapper {
+  padding: 0.8333rem;
+  span {
+    margin-top: 1.667rem;
+    line-height: 1.667rem;
+    font-size: 0.7778rem;
+    color: $color-tertiary;
+  }
+  .h2 {
+    text-transform: capitalize;
+    font-family: $font-secondary;
+    font-size: 1.333rem;
+    color: $color-primary;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.111rem;
+    color: $color-paragraph;
+    margin-top: 15px;
+  }
+  .button-go {
+    width: 4.222rem;
+    height: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    border-radius: 1.222rem;
+    border: 0.111rem solid $color-button;
+    color: $color-button;
+    size: 1.111rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      padding: 0.4333rem;
+    }
+  }
+}

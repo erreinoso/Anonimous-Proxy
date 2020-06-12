@@ -1,0 +1,15 @@
+html {
+  font-size: $font-size;
+  font-family: $font-primary;
+  font-weight: normal;
+}
+
+// temporal
+header,
+main,
+footer {
+  border: 1px solid red;
+}
+section {
+  border: 1px solid green;
+}

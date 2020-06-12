@@ -1,0 +1,46 @@
+.page__section2 .wrapper {
+  display: flex;
+  padding: 0.8333rem;
+  background-color: $color-secondary;
+  flex-direction: column;
+  justify-content: center;
+
+  .h2 {
+    text-transform: capitalize;
+    font-family: $font-secondary;
+    font-size: 1.333rem;
+    text-align: center;
+    margin-top: 1.667rem;
+  }
+
+  .reasons {
+    padding-left: 3.056rem;
+    padding-right: 3.056rem;
+    article {
+      h3 {
+        margin-top: 2.5rem;
+        font-family: $font-secondary;
+        line-height: 1.667rem;
+        text-align: center;
+      }
+      p {
+        line-height: 1.667rem;
+        text-align: center;
+      }
+    }
+  }
+  .button-reasons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-button;
+    color: $color-light;
+    width: 10.22rem;
+    height: 2.5rem;
+    line-height: 1.667rem;
+    border-radius: 1.222rem;
+    margin-top: 3.333rem;
+    margin-bottom: 3.333rem;
+    align-self: center;
+  }
+}

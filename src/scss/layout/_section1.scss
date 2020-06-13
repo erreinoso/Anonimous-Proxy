@@ -13,6 +13,11 @@
     margin-top: 1.667rem;
     margin-bottom: 3.333rem;
   }
+  @include desktop {
+    padding-left: 15.28rem;
+    padding-right: 15.28rem;
+    margin-top: 3.333rem;
+  }
   span {
     margin-top: 1.667rem;
     line-height: 1.667rem;
@@ -46,11 +51,14 @@
     border-radius: 1.222rem;
     border: 0.111rem solid $color-button;
     color: $color-button;
-    size: 1.111rem;
+    font-size: 1.111rem;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: font-weight ease 0.8s;
+    @include desktop {
+      width: 8.889rem;
+    }
     &:hover {
       font-weight: bold;
       border: 0.222rem solid $color-button;

@@ -12,6 +12,11 @@
       display: flex;
       justify-content: space-around;
     }
+    @include desktop {
+      padding-right: 20.56rem;
+      padding-left: 20.56rem;
+      justify-content: space-between;
+    }
     .ico-arrow {
       background-color: $color-light;
       width: 2.5rem;
@@ -19,17 +24,17 @@
       border-radius: 1.222rem;
       box-shadow: 0 2px 4px 0 var(--black-50);
       color: $color-button;
-      size: 1.111rem;
+      font-size: 1.111rem;
       position: absolute;
       left: 50%;
       transform: translate(-50%, -50%);
       align-items: center;
       text-align: center;
 
-      a {
+      .ico-arrow-top {
         padding: 0.3rem;
         img {
-          size: 1.333rem;
+          font-size: 1.333rem;
           transform: translate(0, 85%);
           animation-name: intro;
           animation-duration: 2s;
@@ -63,9 +68,10 @@
         margin: 0;
         padding-left: 0px;
       }
+
       .footer-menu-list1,
       .footer-menu-list2 {
-        size: 0.8889rem;
+        font-size: 0.8889rem;
         a {
           padding: 0.5rem;
         }
@@ -79,7 +85,7 @@
       }
     }
     .footer-small {
-      size: 0.777rem;
+      font-size: 0.777rem;
       text-align: center;
       flex-wrap: wrap;
       padding-top: 1.556rem;

@@ -18,7 +18,10 @@
       padding: 2.167rem;
       padding-bottom: 0;
       height: 768px;
-      // justify-content: flex-end;
+    }
+    @include desktop {
+      padding-left: 200px;
+      padding-right: 200px;
     }
 
     h1 {
@@ -34,6 +37,9 @@
         margin-bottom: 0;
         line-height: 6rem;
         padding-top: 280px;
+      }
+      @include desktop {
+        font-size: 5.556rem;
       }
     }
     .span {
@@ -59,6 +65,9 @@
       @include tablet {
         transform: translate(0, 0%);
         margin: auto;
+      }
+      @include desktop {
+        transform: translate(0, 40%);
       }
     }
   }

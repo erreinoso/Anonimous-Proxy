@@ -13,9 +13,11 @@
     justify-content: center;
     align-content: center;
     height: 100vh;
-    padding: 0.8333rem;
+    padding-left: 0.8333rem;
+    padding-right: 0.8333rem;
     @include tablet {
-      padding: 2.167rem;
+      padding-left: 2.167rem;
+      padding-right: 2.167rem;
       padding-bottom: 0;
       height: 768px;
     }
@@ -27,16 +29,18 @@
     h1 {
       font-size: 2.333rem;
       color: $color-light;
-      text-transform: capitalize;
+      text-transform: uppercase;
       font-family: $font-secondary;
+      margin-top: 33vh;
       text-align: center;
       margin-bottom: 0px;
+      font-weight: bold;
       @include tablet {
+        margin-top: 45px;
         font-size: 4.444rem;
-        text-transform: uppercase;
         margin-bottom: 0;
         line-height: 6rem;
-        padding-top: 280px;
+        margin-top: 21.33rem;
       }
       @include desktop {
         font-size: 5.556rem;
@@ -53,7 +57,6 @@
       }
     }
     a {
-      bottom: 0px;
       align-self: center;
       background-color: $color-light;
       border-radius: 50%;
@@ -61,7 +64,7 @@
       height: 45px;
       display: flex;
       justify-content: center;
-      transform: translate(0, 280%);
+      transform: translate(0, 100%);
       @include tablet {
         transform: translate(0, 0%);
         margin: auto;

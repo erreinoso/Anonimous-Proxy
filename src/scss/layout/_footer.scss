@@ -89,12 +89,14 @@
       text-align: center;
       flex-wrap: wrap;
       padding-top: 1.556rem;
+      padding-bottom: 2.5rem;
       @include tablet {
         flex-direction: row;
         justify-content: flex-start;
         text-align: start;
         padding-top: 2.5rem;
         order: 1;
+        width: 25%;
       }
       .copy {
         display: block;

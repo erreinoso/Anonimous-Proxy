@@ -6,8 +6,8 @@
   flex-direction: column;
   justify-content: center;
   @include tablet {
-    padding-right: 2.222rem;
-    padding-left: 2.222rem;
+    padding-right: 1.944rem;
+    padding-left: 1.944rem;
   }
   @include desktop {
     padding-right: 4.5rem;
@@ -19,6 +19,7 @@
     font-size: 1.333rem;
     text-align: center;
     margin-top: 1.667rem;
+    font-weight: bold;
     @include tablet {
       font-size: 1.444rem;
     }
@@ -31,8 +32,10 @@
   .reasons {
     padding-left: 3.056rem;
     padding-right: 3.056rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
     @include tablet {
-      display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 1.446rem;
       padding-right: 0px;
@@ -48,6 +51,7 @@
         line-height: 1.667rem;
         text-align: center;
         font-size: 1rem;
+        font-weight: bold;
         @include tablet {
           font-size: 1.333rem;
         }
@@ -74,19 +78,20 @@
     height: 2.5rem;
     line-height: 1.667rem;
     border-radius: 1.222rem;
-    margin-top: 3.333rem;
+    margin-top: 2.5rem;
     margin-bottom: 3.333rem;
     align-self: center;
     transition: color ease 0.8s, background-color ease 0.8s, border ease 0.8s;
     &:hover {
       color: $color-button;
       background-color: $color-light;
-      border: 0.2 rem dotted $color-button;
+      border: 0.2rem dotted $color-button;
     }
     @include tablet {
       font-size: 1.111rem;
       width: 11.67rem;
       height: 2.5rem;
+      margin-top: 3.333rem;
     }
     @include desktop {
       width: 14.17rem;

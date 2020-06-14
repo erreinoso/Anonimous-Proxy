@@ -23,12 +23,17 @@
     line-height: 1.667rem;
     font-size: 0.7778rem;
     color: $color-tertiary;
+    @include desktop {
+      font-size: 0.8889rem;
+      margin-top: 3.333rem;
+    }
   }
   .h2 {
     text-transform: capitalize;
     font-family: $font-secondary;
     font-size: 1.333rem;
     color: $color-primary;
+    font-weight: bold;
     @include tablet {
       font-size: 1.444rem;
       line-height: 2.5rem;
@@ -46,7 +51,7 @@
   .button-go {
     width: 4.222rem;
     height: 2.5rem;
-    margin-top: 2.5rem;
+    margin-top: 1.667rem;
     margin-bottom: 2.5rem;
     border-radius: 1.222rem;
     border: 0.111rem solid $color-button;
@@ -56,6 +61,10 @@
     justify-content: center;
     align-items: center;
     transition: font-weight ease 0.8s;
+    @include tablet {
+      margin-bottom: 3.333rem;
+      width: 5.056rem;
+    }
     @include desktop {
       width: 8.889rem;
     }

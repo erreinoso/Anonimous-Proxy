@@ -4,9 +4,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  @include tablet {
-    height: 768px;
-  }
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -19,13 +16,11 @@
       padding-left: 2.167rem;
       padding-right: 2.167rem;
       padding-bottom: 0;
-      height: 768px;
     }
     @include desktop {
       padding-left: 200px;
       padding-right: 200px;
     }
-
     h1 {
       font-size: 2.333rem;
       color: $color-light;
@@ -36,7 +31,6 @@
       margin-bottom: 0px;
       font-weight: bold;
       @include tablet {
-        margin-top: 45px;
         font-size: 4.444rem;
         margin-bottom: 0;
         line-height: 6rem;

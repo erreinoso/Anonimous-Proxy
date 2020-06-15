@@ -80,6 +80,12 @@
     margin-bottom: 3.333rem;
     align-self: center;
     transition: color ease 0.8s, background-color ease 0.8s, border ease 0.8s;
+    a {
+      width: 100%;
+      text-align: center;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
     &:hover {
       color: $color-button;
       background-color: $color-light;

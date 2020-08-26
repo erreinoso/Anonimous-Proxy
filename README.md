@@ -2,9 +2,9 @@
 
 This is a simple layout exercise we developed at [Adalab](https://adalab.es/). We had to replicate a given design using html and sass partials compiled with gulp.
 
-![AP-home](https://github.com/erreinoso/Anonymous-Proxy/blob/master/webdesign-readme.PNG)
+![Screenshot of website](https://github.com/erreinoso/Anonimous-Proxy/blob/master/webdesign-readme.png)
 
-![AP-home](https://github.com/erreinoso/Anonymous-Proxy/blob/master/webdesign-readme2.PNG)
+![Screenshot of website](https://github.com/erreinoso/Anonimous-Proxy/blob/master/webdesign-readme2.png)
 
 **- Requirements**
 
